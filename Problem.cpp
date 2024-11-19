@@ -413,7 +413,7 @@ void Problem::Solve()
         get_dt();
         n++;
         time += params.dt;
-        ArtificialViscosity();
+        ArtificialViscosityMixed();
         if (params.solver == 2) {
             CrossSolverDivergent();
         }

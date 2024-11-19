@@ -8,7 +8,7 @@ start_x 0.0;
 end_x 1.0;
 
 start_t 0.0;
-end_t 0.25;
+end_t 0.035;
 
 CFL 0.5;
 
@@ -16,6 +16,6 @@ writeInterval 50;
 max_iter 5000;
 
 solver 2;
-initial 1;
+initial 4;
 left_boundary 1;
 right_boundary 1;

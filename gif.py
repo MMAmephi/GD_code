@@ -68,7 +68,8 @@ def gif(var):
 files_x = sorted(os.listdir('result/x'), key=lambda x: int(x[:-4]))
 files_xc = sorted(os.listdir('result/xc'), key=lambda x: int(x[:-4]))
 
-os.makedirs("gifs")
+if(not os.path.exists("gifs")):
+  os.makedirs("gifs")
 
 gif('p')
 gif('rho')
