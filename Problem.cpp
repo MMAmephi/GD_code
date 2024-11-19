@@ -107,7 +107,7 @@ Problem::~Problem()
 
 void Problem::write_out(int _n, double _time)
 {
-    if (!fs::exists("result")) {
+    if(!fs::exists("result")) {
         fs::create_directory("result");
     }
     if (!fs::exists("result/x")) {
@@ -404,6 +404,9 @@ void Problem::Solve()
     double time = params.start_t;
     int n = 0;
     init();
+    if (fs::exists("result")) {
+        fs::remove_all("result");
+    }
     write_out(n, time);
     while (time < params.end_t && n < params.max_iter)
     {
