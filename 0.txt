@@ -15,7 +15,7 @@ CFL 0.5;
 writeInterval 50;
 max_iter 5000;
 
-solver 1;
-initial 4;
+solver 2;
+initial 3;
 left_boundary 1;
 right_boundary 1;
