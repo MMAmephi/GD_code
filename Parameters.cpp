@@ -81,7 +81,7 @@ Parameters::Parameters(std::string file_name) {
     g = std::stod(params["g"]);
     Re = std::stod(params["Re"]);
     gamma = std::stod(params["gamma"]);
-    N_x = std::stoi(params["N_x"]) + 2; 
+    N_x = std::stoi(params["N_x"]) + 2;
     start_x = std::stod(params["start_x"]);
     end_x = std::stod(params["end_x"]);
     start_t = std::stod(params["start_t"]);

@@ -107,7 +107,7 @@ Problem::~Problem()
 
 void Problem::write_out(int _n, double _time)
 {
-    if(!fs::exists("result")) {
+    if (!fs::exists("result")) {
         fs::create_directory("result");
     }
     if (!fs::exists("result/x")) {
